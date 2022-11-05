@@ -6,8 +6,7 @@ ubuntu18.04
 sudo add-apt-repository ppa:jonathonf/ffmpeg-4
 sudo apt upgrade
 ```
-2.install pyav from source code
-down load pyav source code from github
+2.download pyav source code from github
 ```
 git clone https://github.com/PyAV-Org/PyAV.git
 ````
