@@ -11,6 +11,7 @@ python3.6
 
 ## pyav installation
 pyav not surpport python2. use pip to install ptav will fail . use pip3 instead 
+
 1.pyav need ffmpeg > 4 ,if you use apt-get install ffmpeg to install ,default version will be ffmpeg 3.4 ,so you need to use instructions before to upgrade ffmpeg
 ```
 sudo add-apt-repository ppa:jonathonf/ffmpeg-4
@@ -53,4 +54,17 @@ pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple/ av
 check pyav version
 ```
 pyav --version
+```
+## opencv-python installation
+```
+pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple scikit-build
+
+sudo apt-get install cmake
+
+pip3 install --upgrade pip -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
+
+pip3 install opencv-python -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
+
+
+
 ```
