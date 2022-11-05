@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+    <node ns="marine_camera" pkg="marine_camera" type="marine_camera_interface.py" name="marine_camera_interface" output="screen">
+    </node>
+   
+    <arg name="rviz_config" default="$(find marine_camera)/rviz/view_marine_camera.rviz" />
+    <node pkg="rviz" type="rviz"
+        name="marine_camera_visualization" args="-d $(arg rviz_config)" />
+  
+</launch>
