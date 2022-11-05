@@ -5,6 +5,20 @@ ubuntu18.04
 ```
 sudo add-apt-repository ppa:jonathonf/ffmpeg-4
 sudo apt upgrade
-
+```
 2.install dependencies of pyav
+down load pyav source code from github
+```
+git clone https://github.com/PyAV-Org/PyAV.git
 
+cd PyAV
+source scripts/activate.sh
+
+pip install --upgrade -r tests/requirements.txt
+
+./scripts/build-deps
+
+# Build PyAV.
+make
+
+```
