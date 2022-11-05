@@ -21,37 +21,37 @@ sudo apt upgrade
 ```
 git clone https://github.com/PyAV-Org/PyAV.git
 ````
-active virtual envirenment
+3.active virtual envirenment
 ```
 cd PyAV
 source scripts/activate.sh
 ```
-install dependencie for ffmpeg4
+4.install dependencie for ffmpeg4
 ```
 sudo apt-get install libmp3lame-dev libx264-dev libxvidcore-dev
 ```
-install dependencies for pillow
+5.install dependencies for pillow
 ```
 sudo apt-get install libjpeg-dev zlib1g-dev
 
 sudo apt-get install libxml2-dev
 ```
-install dependencies for pyav
+6.install dependencies for pyav
 ```
 pip install --upgrade -r tests/requirements.txt
 
 ./scripts/build-deps
 ```
-make pyav
+7.make pyav
 ```
 make
 ```
-install py av
+8.install py av
 ```
 pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple/ av
 
 ```
-check pyav version
+9.check pyav version
 ```
 pyav --version
 ```
