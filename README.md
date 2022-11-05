@@ -9,6 +9,10 @@ opencv
 
 python3.6
 
+net-tools
+
+rospkg
+
 ## pyav installation
 pyav not surpport python2. use pip to install ptav will fail . use pip3 instead 
 
