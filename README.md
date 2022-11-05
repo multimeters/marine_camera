@@ -16,6 +16,8 @@ source scripts/activate.sh
 
 sudo apt-get install libmp3lame-dev libx264-dev libxvidcore-dev
 
+sudo apt-get install libjpeg-dev zlib1g-dev
+
 pip install --upgrade -r tests/requirements.txt
 
 ./scripts/build-deps
