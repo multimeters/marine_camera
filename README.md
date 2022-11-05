@@ -1,3 +1,3 @@
-# marine_camera
+# dependencies
 '''
 pyav installation
