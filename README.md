@@ -31,7 +31,16 @@ pip install --upgrade -r tests/requirements.txt
 
 ./scripts/build-deps
 ```
-# Build PyAV.
+make pyav
+```
 make
+```
+install py av
+```
+pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple/ av
 
+```
+check pyav version
+```
+pyav --version
 ```
