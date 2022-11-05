@@ -1,4 +1,5 @@
 # dependencies
+ubuntu18.04
 ## pyav installation
 ### pyav need ffmpeg > 4
 ```
