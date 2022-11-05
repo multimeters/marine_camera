@@ -14,6 +14,8 @@ git clone https://github.com/PyAV-Org/PyAV.git
 cd PyAV
 source scripts/activate.sh
 
+sudo apt-get install libmp3lame-dev libx264-dev libxvidcore-dev
+
 pip install --upgrade -r tests/requirements.txt
 
 ./scripts/build-deps
