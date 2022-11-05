@@ -2,6 +2,11 @@
 ubuntu18.04
 
 ros melodic
+
+pyav
+
+opencv
+
 ## pyav installation
 1.pyav need ffmpeg > 4 ,if you use ```apt-get install ffmpeg to install ,default version will be ffmpeg 3.4 ,so you need to use instructions before to upgrade ffmpeg
 ```
