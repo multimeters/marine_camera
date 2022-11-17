@@ -11,7 +11,7 @@ python3.6
 
 net-tools
 
-rospkg
+rospkg  ```pip3 install rospkg``` 
 
 virtualenv
 
