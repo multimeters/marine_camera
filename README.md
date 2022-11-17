@@ -66,13 +66,8 @@ pyav --version
 ## opencv-python installation
 ```
 pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple scikit-build
-
 sudo apt-get install cmake
-
 pip3 install --upgrade pip -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
-
 pip3 install opencv-python -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
-
-
 
 ```
