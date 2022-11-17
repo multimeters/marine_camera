@@ -13,9 +13,9 @@ net-tools
 
 rospkg  ```pip3 install rospkg``` 
 
-virtualenv
+virtualenv  ```pip3 install virtualenv ```
 
-pillow ```pip3 install Pillow```
+pillow  ```pip3 install Pillow```
 
 ## pyav installation
 pyav not surpport python2. use pip to install ptav will fail . use pip3 instead 
