@@ -57,7 +57,6 @@ make
 8.install py av
 ```
 pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple/ av
-
 ```
 9.check pyav version
 ```
