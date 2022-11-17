@@ -42,7 +42,7 @@ sudo apt-get install libxml2-dev
 ```
 6.install dependencies for pyav
 ```
-pip install --upgrade -r tests/requirements.txt
+pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple/ --upgrade -r tests/requirements.txt
 
 ./scripts/build-deps
 ```
