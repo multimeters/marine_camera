@@ -55,11 +55,41 @@ pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple/ --upgrade -r tests/req
 make
 ```
 
-因为cython更新这个会报错.如果这个报错,则执行
+上面的指令如果报下面的错:
 ```
-echo "cython<3.0" >> c.txt
+CFLAGS="-O0" LDFLAGS="" python3 setup.py build_ext --inplace --debug
+Compiling av/logging.pyx because it changed.
+[1/1] Cythonizing av/logging.pyx
 
-PIP_CONSTRAINT=c.txt pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple/ av==10.0.0
+Error compiling Cython file:
+------------------------------------------------------------
+...
+cdef const char *log_context_name(void *ptr) nogil:
+    cdef log_context *obj = <log_context*>ptr
+    return obj.name
+
+cdef lib.AVClass log_class
+log_class.item_name = log_context_name
+                      ^
+------------------------------------------------------------
+
+av/logging.pyx:216:22: Cannot assign type 'const char *(void *) except? NULL nogil' to 'const char *(*)(void *) noexcept nogil'. Exception values are incompatible. Suggest adding 'noexcept' to type 'const char *(void *) except? NULL nogil'.
+
+Error compiling Cython file:
+------------------------------------------------------------
+...
+
+# Start the magic!
+# We allow the user to fully disable the logging system as it will not play
+# nicely with subinterpreters due to FFmpeg-created threads.
+if os.environ.get('PYAV_LOGGING') != 'off':
+    lib.av_log_set_callback(log_callback)
+```
+这是由于cython升级造成的,需要卸载并安装Cython==0.29.21
+```
+cython --version
+pip3 uninstall Cython
+pip3 install Cython==0.29.21
 ```
 
 8.install py av
