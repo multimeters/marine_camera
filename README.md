@@ -54,6 +54,14 @@ pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple/ --upgrade -r tests/req
 ```
 make
 ```
+
+因为cython更新这个会报错.如果这个报错,则执行
+```
+echo "cython<3.0" >> c.txt
+
+PIP_CONSTRAINT=c.txt pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple/ av==10.0.0
+```
+
 8.install py av
 ```
 pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple/ av
